@@ -1,6 +1,6 @@
 === Reverbnation Master ===
 Contributors: Techgasp
-Tags: wordpress, plugin, widget, sound, music, mp3, wav, player, playlist, embend, reverbnation, reverb nation
+Tags: wordpress, plugin, widget, sound, music, mp3, wav, player, playlist, embedded, reverbnation, reverb nation
 Requires at least: 3.5
 Tested up to: 3.5.1
 Stable tag: 2.0
