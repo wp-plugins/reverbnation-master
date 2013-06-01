@@ -8,7 +8,6 @@ License: GPLv2 or later
 
 Reverbnation Master plugs-in perfectly into wordpress and allows you to display all the reverbnation juice inside any widget template position.
 
-
 == Description ==
 
 Great sound extension for wordpress is now available for download. Reverbnation is an award winning website and social community for independent music industry providing a central meeting point for musicians, producers and venues to communicate and collaborate.
@@ -19,7 +18,7 @@ With fast loading speeds, Reverbnation Master as a very small system trace and i
 
 IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX.
 
-**independent music for wordpress...**
+**independent music for wordpress**
 
 **LITE Version Contains:**
 
