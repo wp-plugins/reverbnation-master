@@ -58,9 +58,9 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX.
 * [Advaced Version Link](http://wordpress.techgasp.com/reverbnation-master/)
 
 = Need More Help =
-* [ABOUT DOCUMENTATION](http://worpress.techgasp.com)
-* [ABOUT INSTALLATION](http://worpress.techgasp.com)
-* [SUPPORT](http://worpress.techgasp.com/support)
+* [ABOUT DOCUMENTATION](http://wordpress.techgasp.com)
+* [ABOUT INSTALLATION](http://wordpress.techgasp.com)
+* [SUPPORT](http://wordpress.techgasp.com/support)
 
 
 == Screenshots ==
