@@ -2,7 +2,7 @@
 /**
 Plugin Name: Reverbnation Master
 Plugin URI: http://wordpress.techgasp.com/reverbnation-master/
-Version: 2.0
+Version: 2.1
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: reverbnation-master
@@ -32,7 +32,11 @@ define('TECHGASP_REVERBNATIONMASTER_ID', 'reverbnation-master-options');
 // DEFINE PLUGIN NICK
 define('TECHGASP_REVERBNATIONMASTER_NICK', 'Reverbnation Master');
 
+// HOOK WIDGET
 require_once('techgasp-reverbnationmaster-widget.php');
+
+// HOOK INVITATION
+
 
     class techgasp_reverbnationmaster
     {
@@ -97,7 +101,7 @@ require_once('techgasp-reverbnationmaster-widget.php');
 		*/
 		public static function content_with_quote($content)
 		{
-			$quote = '<p><blockquote>' . get_option('tsm_quote') . '</blockquote></p>';
+			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
 		
