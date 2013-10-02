@@ -2,7 +2,7 @@
 /**
 Plugin Name: Reverbnation Master
 Plugin URI: http://wordpress.techgasp.com/reverbnation-master/
-Version: 2.1
+Version: 2.2
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: reverbnation-master
@@ -106,7 +106,7 @@ require_once('techgasp-reverbnationmaster-widget.php');
 		}
 		
 		// Add settings link on plugin page
-		public function techgasp_reverbnationmaster_link($links, $file) {
+		public static function techgasp_reverbnationmaster_link($links, $file) {
 		static $this_plugin;
 		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
 		if ($file == $this_plugin){
