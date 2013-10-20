@@ -2,7 +2,7 @@
 /**
 Plugin Name: Reverbnation Master
 Plugin URI: http://wordpress.techgasp.com/reverbnation-master/
-Version: 2.2
+Version: 4.0
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: reverbnation-master
@@ -24,22 +24,23 @@ License: GPL2 or later
     along with this program; if not, write to the Free Software
     Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
 */
-if(!class_exists('techgasp_reverbnationmaster')) :
+
+if(!class_exists('reverbnation_master')) :
 
 // DEFINE PLUGIN ID
-define('TECHGASP_REVERBNATIONMASTER_ID', 'reverbnation-master-options');
+define('REVERBNATION_MASTER_ID', 'reverbnation-master');
 
 // DEFINE PLUGIN NICK
-define('TECHGASP_REVERBNATIONMASTER_NICK', 'Reverbnation Master');
+define('REVERBNATION_MASTER_NICK', 'Reverbnation Master');
 
 // HOOK WIDGET
-require_once('techgasp-reverbnationmaster-widget.php');
+require_once('includes/reverbnation-master-widget.php');
 
 // HOOK INVITATION
 
+// HOOK SHORTCODE
 
-    class techgasp_reverbnationmaster
-    {
+	class reverbnation_master{
 		/** function/method
 		* Usage: return absolute file path
 		* Arg(1): string
@@ -54,9 +55,9 @@ require_once('techgasp-reverbnationmaster-widget.php');
 		* Arg(0): null
 		* Return: void
 		*/
-		public static function techgasp_reverbnationmaster_register()
+		public static function reverbnation_master_register()
 		{
-			register_setting(TECHGASP_REVERBNATIONMASTER_ID.'_options', 'tsm_quote');
+			register_setting(REVERBNATION_MASTER_ID, 'tsm_quote');
 		}
 		/** function/method
 		* Usage: hooking (registering) the plugin menu
@@ -66,8 +67,8 @@ require_once('techgasp-reverbnationmaster-widget.php');
 		public static function menu()
 		{
 			// Create menu tab
-			add_options_page(TECHGASP_REVERBNATIONMASTER_NICK.' Plugin Options', TECHGASP_REVERBNATIONMASTER_NICK, 'manage_options', TECHGASP_REVERBNATIONMASTER_ID.'_options', array('techgasp_reverbnationmaster', 'options_page'));
-			add_filter( 'plugin_action_links', array('techgasp_reverbnationmaster', 'techgasp_reverbnationmaster_link'), 10, 2 );
+			add_options_page(REVERBNATION_MASTER_NICK.' Plugin Options', REVERBNATION_MASTER_NICK, 'manage_options', REVERBNATION_MASTER_ID.'-admin', array('reverbnation_master', 'options_page'));
+			add_filter( 'plugin_action_links', array('reverbnation_master', 'reverbnation_master_link'), 10, 2 );
 		}
 		/** function/method
 		* Usage: show options/settings form page
@@ -80,20 +81,20 @@ require_once('techgasp-reverbnationmaster-widget.php');
 			{
 				wp_die( __('You do not have sufficient permissions to access this page.') );
 			}
-			$plugin_id = TECHGASP_REVERBNATIONMASTER_ID;
+			$plugin_id = REVERBNATION_MASTER_ID;
 			// display options page
-			include(self::file_path('techgasp-reverbnationmaster-admin.php'));
+			include(self::file_path('includes/reverbnation-master-admin.php'));
 		}
 		/** function/method
-                * Usage: show options/settings form page
-                * Arg(0): null
-                * Return: void
-                */
-		 public static function techgasp_reverbnationmaster_widget()
-                {
-                        // display widget page
-                        include(self::file_path('techgasp-reverbnationmaster-widget.php'));
-                }
+		* Usage: show options/settings form page
+		* Arg(0): null
+		* Return: void
+		*/
+		 public static function reverbnation_master_widget()
+		{
+			// display widget page
+			include(self::file_path('includes/reverbnation-master-widget.php'));
+		}
 		/** function/method
 		* Usage: filtering the content
 		* Arg(1): string
@@ -104,23 +105,24 @@ require_once('techgasp-reverbnationmaster-widget.php');
 			$quote = '<p>' . get_option('tsm_quote') . '</p>';
 			return $content . $quote;
 		}
-		
 		// Add settings link on plugin page
-		public static function techgasp_reverbnationmaster_link($links, $file) {
-		static $this_plugin;
-		if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
-		if ($file == $this_plugin){
-		$settings_link = '<a href="' . admin_url( 'options-general.php?page='.TECHGASP_REVERBNATIONMASTER_ID).'_options' . '">' . __( 'Settings' ) . '</a>';
-		array_unshift($links, $settings_link);
-		}
+		public static function reverbnation_master_link($links, $file) {
+			static $this_plugin;
+			if (!$this_plugin) $this_plugin = plugin_basename(__FILE__);
+			if ($file == $this_plugin){
+				$settings_link = '<a href="' . admin_url( 'options-general.php?page='.REVERBNATION_MASTER_ID).'-admin' . '">' . __( 'Settings' ) . '</a>';
+				array_unshift($links, $settings_link);
+			}
 		return $links;
 		}
+		// Advanced Updater
 	}
-		if ( is_admin() )
+	if ( is_admin() )
 		{
-		add_action('admin_init', array('techgasp_reverbnationmaster', 'techgasp_reverbnationmaster_register'));
-		add_action('admin_menu', array('techgasp_reverbnationmaster', 'menu'));
+		add_action('admin_init', array('reverbnation_master', 'reverbnation_master_register'));
+		add_action('admin_menu', array('reverbnation_master', 'menu'));
+
 		}
-		add_filter('the_content', array('techgasp_reverbnationmaster', 'content_with_quote'));
+	add_filter('the_content', array('reverbnation_master', 'content_with_quote'));
 endif;
 ?>
