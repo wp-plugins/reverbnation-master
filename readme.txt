@@ -52,7 +52,7 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX.
 1. Use the Wordpress Installer, Updater.
 2. Activate in the "Plugins" admin panel.
 3. Visit the "Widget Page | Reverbnation Master" to configure the settings and your template widget position.
-4. [Reverbnation Master Documentation](http://wordpress.techgasp.com/reverbnation-profile-master-documentation)
+4. [Reverbnation Master Documentation](http://wordpress.techgasp.com/reverbnation-master-documentation)
 
 
 == Frequently Asked Questions ==
