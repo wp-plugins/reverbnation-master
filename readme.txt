@@ -93,9 +93,6 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX.
 
 == Changelog ==
 
-= 4.0.1 =
-* Changing the plugin settings font
-
 = 4.0 =
 * Implementing New Shortcode Framework v2. Shortcode box will now be available when editing a page or a post
 
