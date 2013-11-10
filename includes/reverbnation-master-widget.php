@@ -30,7 +30,8 @@ class reverbnation_master_widget extends WP_Widget {
 
 	//Display Reverbnation Profile Button
 	if ( $show_reverbbutton )
-			echo '<a href="'.$reverbpage.'" target="_blank"><img src="/wp-content/plugins/reverbnation-master/images/reverbnation_button.png"></a>';
+			$url_loc = plugins_url();
+			echo '<a href="'.$reverbpage.'" target="_blank"><img src="'.$url_loc.'/reverbnation-master/images/reverbnation_button.png"></a>';
 	echo $after_widget;
 	}
 	//Update the widget
