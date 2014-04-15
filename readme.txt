@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, sound, music, mp3, wav, player, playlist, embedded, reverbnation, reverb nation
 Requires at least: 3.5
-Tested up to: 3.8.1
-Stable tag: 4.3.5
+Tested up to: 3.8.3
+Stable tag: 4.3.6
 License: GPLv2 or later
 
 Reverbnation Master plugs-in perfectly into wordpress and allows you to display all the reverbnation juice inside any widget template position.
@@ -115,6 +115,9 @@ Reverbnation Master Advanced Responsive Widget:
 
 
 == Changelog ==
+
+= 4.3.6 =
+* Added automatic deletion of site_transients
 
 = 4.3.5 =
 * TechGasp Plugin Framework v3 Improvements and Upgrades
