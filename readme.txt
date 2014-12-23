@@ -2,7 +2,7 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, sound, music, mp3, wav, player, playlist, embedded, reverbnation, reverb nation
 Requires at least: 3.5
-Tested up to: 4.0
+Tested up to: 4.1
 Stable tag: 4.3.6
 License: GPLv2 or later
 
