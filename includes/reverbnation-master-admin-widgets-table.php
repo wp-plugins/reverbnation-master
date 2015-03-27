@@ -19,8 +19,8 @@ class reverbnation_master_admin_widgets_table extends WP_List_Table {
 
 	<tfoot>
 		<tr>
-			<th class="manage-column column-columnname" scope="col" width="300"><a class="button-primary" href="/wp-admin/widgets.php" title="To Widgets Page" style="float:left;">To Widgets Page</a></p></th>
-			<th class="manage-column column-columnname" scope="col"><a class="button-primary" href="/wp-admin/widgets.php" title="To Widgets Page" style="float:right;">To Widgets Page</a></p></th>
+			<th class="manage-column column-columnname" scope="col" width="300"><a class="button-primary" href="<?php echo get_site_url(); ?>/wp-admin/widgets.php" title="To Widgets Page" style="float:left;">To Widgets Page</a></p></th>
+			<th class="manage-column column-columnname" scope="col"><a class="button-primary" href="<?php echo get_site_url(); ?>/wp-admin/widgets.php" title="To Widgets Page" style="float:right;">To Widgets Page</a></p></th>
 		</tr>
 	</tfoot>
 
@@ -31,7 +31,15 @@ class reverbnation_master_admin_widgets_table extends WP_List_Table {
 		</tr>
 		<tr>
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-widget-advanced.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
-			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Advanced Responsive Widget</h3><p>"Top of the Line" Advanced Reverbnation Widget plugs-in perfectly into wordpress and allows you to display all the reverbnation juice inside any widget template position. <b>NO USE</b> of nasty Javascipt or Ajax.</p><p>Encapsulates any Reverbnation script in <b>html5</b> for fast page load times and perfect Google SEO. This advanced widget allows you to show all Reverbnation Share scripts, <b>Html5 Player</b>, <b>Html5 Fan Collector</b>, <b>Html5 Show Schedule</b>, <b>Tune Widget</b>, <b>Shop</b>. Fully Mobile Responsive.</p><p>Check Add-ons Page.</p></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Advanced Responsive Widget</h3><p>"Top of the Line" Advanced Reverbnation Widget plugs-in perfectly into wordpress and allows you to display all the reverbnation juice inside any widget template position. <b>NO USE</b> of nasty Javascipt or Ajax.</p><p>Encapsulates any Reverbnation script in <b>html5</b> for fast page load times and perfect Google SEO. This advanced widget allows you to show all Reverbnation Share scripts, <b>Html5 Player</b>, <b>Html5 Fan Collector</b>, <b>Html5 Show Schedule</b>, <b>Tune Widget</b>, <b>Shop</b>. Fully Mobile Responsive.</p><p>Check Add-ons page.</p></td>
+		</tr>
+		<tr class="alternate">
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-widget-banner.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Responsive User Banner Widget</h3><p>Makes it easy to add a cool reverbnation user banner to your wordpress.</p><p>Encapsulates any Reverbnation script in <b>html5</b> for fast page load times and perfect Google SEO. <b>Fully Mobile Responsive</b>.</p><p>Check Add-ons page.</p></td>
+		</tr>
+		<tr>
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-widget-dashboard.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Administrator Dashboard Widget</h3><p>The wordpress administrator dashboard widget allows you to have any native reverbnation widget inside your wordpress dashboard page.</p><p>Very useful to listen to music or have your reverbnation schedule close by while you work on your wordpress.</p><p>Check Add-ons page.</p></td>
 		</tr>
 		<tr class="alternate">
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-admin-widget-blank.png', __FILE__); ?>" alt="<?php echo get_option('amazon_master_name'); ?>" align="left" width="300px" height="135px" style="padding:5px;"/></td>

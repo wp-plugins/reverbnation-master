@@ -26,9 +26,17 @@ class reverbnation_master_widget_buttons extends WP_Widget {
 		// Display the widget title
 	if ( $reverbnation_title ){
 		if (empty ($reverbnation_title_new)){
-		$reverbnation_title_new = get_option('reverbnation_master_name');
-		}
+			if(is_multisite()){
+			$reverbnation_title_new = get_site_option('reverbnation_master_name');
+			}
+			else{
+			$reverbnation_title_new = get_option('reverbnation_master_name');
+			}
 		echo $before_title . $reverbnation_title_new . $after_title;
+		}
+		else{
+		echo $before_title . $reverbnation_title_new . $after_title;
+		}
 	}
 	else{
 	}

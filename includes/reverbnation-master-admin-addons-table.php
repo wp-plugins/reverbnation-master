@@ -30,13 +30,21 @@ class reverbnation_master_admin_addons_table extends WP_List_Table {
 		<tr class="alternate">
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-addons-widget-buttons.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="139px" style="padding:5px;"/></td>
 			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Buttons Widget</h3><p>Reverbnation Master Buttons Widget is perfect to connect your wordpress visitors and users to your Reverbnation Profile. Watch those profile visits explode!.</p><p>Looks great when published under the advanced widget, remember you can always hide the widget title to get the button closer to your video.</p><p>Navigate to your wordpress widgets page and start using it.</p></td>
-
 			<td class="column-columnname" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-check-yes.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="200px" height="121px" style="padding:5px;"/></td>
 		</tr>
 		<tr>
 			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-addons-widget-advanced.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="139px" style="padding:5px;"/></td>
 			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Advanced Responsive Widget</h3><p>"Top of the Line" Advanced Reverbnation Widget plugs-in perfectly into wordpress and allows you to display all the reverbnation juice inside any widget template position. <b>NO USE</b> of nasty Javascipt or Ajax.</p><p>Encapsulates any Reverbnation script in <b>html5</b> for fast page load times and perfect Google SEO. This advanced widget allows you to show all Reverbnation Share scripts, <b>Html5 Player</b>, <b>Html5 Fan Collector</b>, <b>Html5 Show Schedule</b>, <b>Tune Widget</b>, <b>Shop</b>. Fully Mobile Responsive.</p><p>Navigate to your wordpress widgets page and start using it.</p></td>
-
+			<td class="column-columnname" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-check-no.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="200px" height="121px" style="padding:5px;"/></td>
+		</tr>
+		<tr class="alternate">
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-addons-widget-banner.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="139px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Responsive User Banner Widget</h3><p>Makes it easy to add a cool reverbnation user banner to your wordpress.</p><p>Encapsulates any Reverbnation script in <b>html5</b> for fast page load times and perfect Google SEO. <b>Fully Mobile Responsive</b>.</p><p>Navigate to your wordpress widgets page and start using it.</p></td>
+			<td class="column-columnname" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-check-no.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="200px" height="121px" style="padding:5px;"/></td>
+		</tr>
+		<tr>
+			<td class="column-columnname" width="300" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-reverbnationmaster-admin-addons-widget-dashboard.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="300px" height="139px" style="padding:5px;"/></td>
+			<td class="column-columnname"style="vertical-align:middle"><h3>Reverbnation Administrator Dashboard Widget</h3><p>The wordpress administrator dashboard widget allows you to have any native reverbnation widget inside your wordpress dashboard page.</p><p>Very useful to listen to music or have your reverbnation schedule close by while you work on your wordpress.</p><p>Navigate to your wordpress widgets page and start using it.</p></td>
 			<td class="column-columnname" style="vertical-align:middle"><img src="<?php echo plugins_url('../images/techgasp-check-no.png', __FILE__); ?>" alt="<?php echo get_option('reverbnation_master_name'); ?>" align="left" width="200px" height="121px" style="padding:5px;"/></td>
 		</tr>
 		<tr class="alternate">

@@ -2,8 +2,8 @@
 Contributors: Techgasp
 Tags: wordpress, plugin, widget, sound, music, mp3, wav, player, playlist, embedded, reverbnation, reverb nation
 Requires at least: 3.5
-Tested up to: 4.1
-Stable tag: 4.3.6
+Tested up to: 4.1.1
+Stable tag: 4.4.1.4
 License: GPLv2 or later
 
 Reverbnation Master plugs-in perfectly into wordpress and allows you to display all the reverbnation juice inside any widget template position.
@@ -36,6 +36,10 @@ IMPORTANT: Errors and conflicts free. NO JAVASCRIPT or AJAX.
 * Reverbnation Master Buttons Widget:
 * Cool transparent Reverbnation Profile Button to connect your wordpress and boost up your Reverbnation Profile
 
+Reverbnation Master Administrator Dashboard Widget:
+* The wordpress administrator dashboard widget allows you to have any native reverbnation widget inside your wordpress dashboard page
+* Very useful to listen to music or have your reverbnation schedule close by while you work on your wordpress
+
 Reverbnation Master Advanced Responsive Widget:
 * Makes your life easy to manage all Reverbnation Widgets
 * Cleans and speeds up Reverbnation scripts for optimal page load times
@@ -48,6 +52,10 @@ Reverbnation Master Advanced Responsive Widget:
 * Tune Widget
 * Shop
 * etc.
+
+Reverbnation Master Responsive Reverbnation Banner Widget:
+* Makes it easy to add a cool reverbnation user banner to your wordpress
+* Fully mobile responsive
 
 * TechGasp Shortcode Framework v3:
 * Universal Shortcode for all pages and posts, same Shortcode applies to all pages and posts. Option to Automatically add the shortcode to all pages and posts or manually add the pre-built shortcode individually per page or post. Option to automatically only show the shortcode in Posts and not Pages. Option to Automatically show the shortcode After the Title or After the Content.
@@ -111,10 +119,36 @@ Reverbnation Master Advanced Responsive Widget:
 4. Reverbnation Master Advanced Responsive Widget, Html5 Player Vertical
 5. Reverbnation Master Advanced Responsive Widget, Html5 Player Horizontal
 6. Reverbnation Master Advanced Responsive Widget, Html5 Newsletter
-7. Shortcode inside pages and posts. Shortcode framework implementations. Reverbnation Player inside a page.
+7. Reverbnation Master Responsive Reverbnation Banner Widget
+8. Reverbnation Master Dashboard Widget
+9. Shortcode inside pages and posts. Shortcode framework implementations. Reverbnation Player inside a page.
 
 
 == Changelog ==
+
+= 4.4.1.4 =
+* Getting all widget titles network ready
+
+= 4.4.1.3 =
+* Tweaking Updater
+* Adding Reverbnation Master Responsive Reverbnation Banner Widget
+
+= 4.4.1.2 =
+* Adding Network Warnings and help texts
+* Adding Reverbnation Master Dashboard Widget
+
+= 4.4.1.1 =
+* Fixing uninstall, plugin deletion on wordpress network and multi-sites
+
+= 4.4.1.0 =
+* Fixing Shortcodes
+* Fixing Widgets
+* General clean-up and speed boost
+
+= 4.4.0 =
+* Wordpress multi-site or wordpress network ready
+* New screenshots and images
+* Reverbnation Button tweaked
 
 = 4.3.6 =
 * Added automatic deletion of site_transients
