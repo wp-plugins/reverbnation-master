@@ -2,7 +2,7 @@
 /**
 Plugin Name: Reverbnation Master
 Plugin URI: http://wordpress.techgasp.com/reverbnation-master/
-Version: 4.4.1.4
+Version: 4.4.1.5
 Author: TechGasp
 Author URI: http://wordpress.techgasp.com
 Text Domain: reverbnation-master
@@ -33,9 +33,9 @@ define( 'REVERBNATION_MASTER_URL', plugin_dir_url( __FILE__ ) );
 ///////DEFINE ID//////
 define( 'REVERBNATION_MASTER_ID', 'reverbnation-master');
 ///////DEFINE VERSION///////
-define( 'REVERBNATION_MASTER_VERSION', '4.4.1.4' );
+define( 'REVERBNATION_MASTER_VERSION', '4.4.1.5' );
 global $reverbnation_master_version, $reverbnation_master_name;
-$reverbnation_master_version = "4.4.1.4"; //for other pages
+$reverbnation_master_version = "4.4.1.5"; //for other pages
 $reverbnation_master_name = "Reverbnation Master"; //pretty name
 if( is_multisite() ) {
 update_site_option( 'reverbnation_master_installed_version', $reverbnation_master_version );
