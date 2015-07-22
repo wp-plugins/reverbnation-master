@@ -67,7 +67,7 @@ class reverbnation_master_widget_buttons extends WP_Widget {
 		<br>
 		<b>Check the buttons to be displayed:</b>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['reverbnation_title'], true ); ?> id="<?php echo $this->get_field_id( 'reverbnation_title' ); ?>" name="<?php echo $this->get_field_name( 'reverbnation_title' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'reverbnation_title' ); ?>"><b><?php _e('Display Widget Title', 'reverbnation_master'); ?></b></label></br>
@@ -77,9 +77,9 @@ class reverbnation_master_widget_buttons extends WP_Widget {
 	<br>
 	<input id="<?php echo $this->get_field_id( 'reverbnation_title_new' ); ?>" name="<?php echo $this->get_field_name( 'reverbnation_title_new' ); ?>" value="<?php echo $instance['reverbnation_title_new']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; height:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; height:16px; vertical-align:middle;" />
 	&nbsp;
 	<input type="checkbox" <?php checked( (bool) $instance['show_reverbbutton'], true ); ?> id="<?php echo $this->get_field_id( 'show_reverbbutton' ); ?>" name="<?php echo $this->get_field_name( 'show_reverbbutton' ); ?>" />
 	<label for="<?php echo $this->get_field_id( 'show_reverbbutton' ); ?>"><b><?php _e('Reverbnation Profile Button', 'reverbnation_master'); ?></b></label></br>
@@ -88,9 +88,9 @@ class reverbnation_master_widget_buttons extends WP_Widget {
 	<label for="<?php echo $this->get_field_id( 'reverbpage' ); ?>"><?php _e('insert Reverbnation Profile link:', 'reverbnation_master'); ?></label></br>
 	<input id="<?php echo $this->get_field_id( 'reverbpage' ); ?>" name="<?php echo $this->get_field_name( 'reverbpage' ); ?>" value="<?php echo $instance['reverbpage']; ?>" style="width:auto;" />
 	</p>
-<div style="background: url(<?php echo plugins_url('../images/techgasp-hr.png', __FILE__); ?>) repeat-x; height: 10px"></div>
+<div style="background: url(<?php echo plugins_url('images/techgasp-hr.png', dirname(__FILE__)); ?>) repeat-x; height: 10px"></div>
 	<p>
-	<img src="<?php echo plugins_url('../images/techgasp-minilogo-16.png', __FILE__); ?>" style="float:left; width:16px; vertical-align:middle;" />
+	<img src="<?php echo plugins_url('images/techgasp-minilogo-16.png', dirname(__FILE__)); ?>" style="float:left; width:16px; vertical-align:middle;" />
 	&nbsp;
 	<b>Reverbnation Master Website</b>
 	</p>
